@@ -1,0 +1,193 @@
+/* Estilos gerais */
+.root {
+    -fx-font-family: 'Segoe UI', sans-serif;
+    -fx-background-color: #f8f9fa;
+}
+
+/* Cabeçalho */
+.header {
+    -fx-padding: 15px;
+    -fx-background-color: #ffffff;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 5, 0, 0, 1);
+}
+
+.header-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2d3748;
+}
+
+.header-subtitle {
+    -fx-font-size: 12px;
+    -fx-text-fill: #718096;
+}
+
+/* Painéis */
+.panel {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 5;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 5, 0, 0, 1);
+    -fx-padding: 15px;
+}
+
+.panel-title {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2d3748;
+}
+
+/* Calendário */
+.calendar {
+    -fx-padding: 10px;
+}
+
+.day-header {
+    -fx-font-size: 12px;
+    -fx-text-fill: #4a5568;
+    -fx-alignment: center;
+}
+
+.day {
+    -fx-alignment: center;
+    -fx-min-width: 30px;
+    -fx-min-height: 30px;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-border-width: 1;
+    -fx-border-color: #e2e8f0;
+    -fx-background-color: #ffffff;
+    -fx-cursor: hand;
+}
+
+.day:hover {
+    -fx-effect: dropshadow(gaussian, rgba(59,130,246,0.5), 5, 0, 0, 0);
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+
+.day-worked {
+    -fx-background-color: #4ade80;
+    -fx-text-fill: white;
+}
+
+.day-dayoff {
+    -fx-background-color: #facc15;
+    -fx-text-fill: white;
+}
+
+.day-absent {
+    -fx-background-color: #f87171;
+    -fx-text-fill: white;
+}
+
+/* Resumo */
+.summary-item {
+    -fx-font-size: 12px;
+    -fx-padding: 3px 0;
+}
+
+.summary-value {
+    -fx-font-weight: bold;
+}
+
+.balance-positive {
+    -fx-text-fill: #10b981;
+    -fx-font-weight: bold;
+}
+
+.balance-negative {
+    -fx-text-fill: #ef4444;
+    -fx-font-weight: bold;
+}
+
+/* Despesas */
+.expense-list {
+    -fx-max-height: 200px;
+    -fx-padding: 5px;
+}
+
+.expense-item {
+    -fx-padding: 5px 10px;
+    -fx-background-color: #f8fafc;
+    -fx-background-radius: 3;
+    -fx-border-radius: 3;
+    -fx-margin: 2px 0;
+}
+
+.expense-item:hover {
+    -fx-background-color: #f1f5f9;
+}
+
+.delete-button {
+    -fx-text-fill: #ef4444;
+    -fx-cursor: hand;
+}
+
+.delete-button:hover {
+    -fx-text-fill: #dc2626;
+}
+
+/* Botões */
+.button-primary {
+    -fx-background-color: #3b82f6;
+    -fx-text-fill: white;
+    -fx-background-radius: 3;
+    -fx-padding: 5px 10px;
+    -fx-cursor: hand;
+}
+
+.button-primary:hover {
+    -fx-background-color: #2563eb;
+}
+
+.button-success {
+    -fx-background-color: #10b981;
+    -fx-text-fill: white;
+    -fx-background-radius: 3;
+    -fx-padding: 5px 10px;
+    -fx-cursor: hand;
+}
+
+.button-success:hover {
+    -fx-background-color: #059669;
+}
+
+.button-danger {
+    -fx-background-color: #ef4444;
+    -fx-text-fill: white;
+    -fx-background-radius: 3;
+    -fx-padding: 5px 10px;
+    -fx-cursor: hand;
+}
+
+.button-danger:hover {
+    -fx-background-color: #dc2626;
+}
+
+/* Campos de entrada */
+.text-field, .spinner {
+    -fx-background-radius: 3;
+    -fx-border-radius: 3;
+    -fx-border-color: #e2e8f0;
+    -fx-padding: 5px;
+}
+
+.text-field:focused, .spinner:focused {
+    -fx-border-color: #3b82f6;
+    -fx-effect: dropshadow(gaussian, rgba(59,130,246,0.3), 5, 0, 0, 0);
+}
+
+/* Tooltip */
+.tooltip {
+    -fx-background-color: #2d3748;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-padding: 5px;
+    -fx-background-radius: 3;
+}
+
+/* Toast */
+.toast {
+    -fx-background-color: #10b981;
+    -fx-text-fill: white;
+    -fx-padding: 10px 15px;
